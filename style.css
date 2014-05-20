@@ -1,0 +1,251 @@
+﻿/*
+         paro22.com | klimaolympiade | v.1.0
+
+         stylesheet
+
+         colors used:
+
+
+
+*/
+/* ------------------------------------ RESET ------------------------------------- */
+
+/* meyerweb css reset v1.0 | 20080212 */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+body {line-height:1;}
+ol,ul {list-style:none;}
+blockquote,q {quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after {content:'';content:none;}
+:focus {outline:0;}
+ins {text-decoration:none;}
+del {text-decoration:line-through;}
+table {border-collapse:collapse;border-spacing:0;}
+
+/* ------------------------------------ BASIC PAGE STRUCTURE ------------------------------------- */
+
+html,body {
+text-align:center;
+}
+
+body {
+font-size:12px;
+line-height:16px;
+font-family:'Trebuchet MS', Verdana, Arial, Sans-Serif;
+color:#444;
+background:url('images/stripes.png');
+}
+
+#container {
+margin:0 auto;
+text-align:left;
+width:860px;
+margin-top:20px;
+margin-bottom:20px;
+overflow:hidden;
+}
+#sitebar{
+width:200px;
+float:left;
+}
+
+#lang-menu { margin:0 20px; }
+.lang-img { width:16px;height:11px; position:relative; top:2px; margin:0 0 0 3px;}
+
+#kontakt-box {
+background:#f9f9f9 url('images/kontakt-verlauf.png') repeat-x bottom left;
+padding:30px 20px;
+margin:15px 0;
+width:170px;
+border:1px solid #ccc;
+position:relative;
+border-bottom:2px solid #bbb;
+}
+#kontakt-box h2 {
+margin:0 0 20px 0;
+}
+
+.kontakt-telefon { background:url('images/mobile-phone.png') no-repeat center left; padding:0 0 0 24px; margin:0 0 10px 0;}
+.kontakt-email { background:url('images/mail.png') no-repeat center left; padding:0 0 0 24px; }
+
+#style-corner { background:url('images/arrow.png') no-repeat; position:absolute; width:30px; height:20px;  left:-2px; top:-20px; }
+
+#content{
+float:right;
+width:630px;
+}
+#text{
+border:1px solid #ccc;
+padding:30px;
+margin:-10px 0 0 0;
+background:#fff url('images/text-verlauf.png') repeat-x bottom left;
+}
+
+/* ------------------------------------ BASIC CONTENT ------------------------------------- */
+
+h1{
+color:#124466;
+font-size:1.7em;
+margin:5px 0 5px 0;
+}
+h2{
+font-size:1.2em;
+margin:0 0 15px 0;
+color:#333;
+}
+h3{
+font-size:1.0em;
+font-weight:bold;
+margin:0 0 15px 0;
+color:#555;
+}
+p{
+margin:0.5em 0 1em;
+line-height:1.7em;
+}
+strong {
+font-weight:bold;
+color:#000;
+}
+
+a{
+color:#111;
+text-decoration:underline;
+}
+a:hover{
+color:#111;
+text-decoration:none;
+}
+.portrait-bild{
+    border: 5px solid #fff;
+    height: 281px;
+    padding: 5px;
+    width: 192px;
+}
+.trenner-oben { margin-top:20px; border-top:1px dashed #ccc; padding-top:20px; }
+
+
+.styled-list li {
+list-style-image:url('images/punkt.gif');
+margin:0 0 0 20px;
+}
+.styled-list li.detail-link { margin:10px 0 0 20px; list-style-image:url('images/detail-link.png'); }
+
+/* ------------------------------------ Menu ------------------------------------- */
+
+ul#menu{
+margin:60px 0 0 10px;
+position:relative;
+clear:both;
+overflow: hidden;
+}
+ul#menu li{
+list-style-type:none;
+display:block;
+float:left;
+padding:5px 20px;
+}
+ul#menu li.aktiv{
+background:url('images/navi-bg.png') no-repeat top left;
+color:#fff;
+font-weight:bold;
+height:37px;
+border-top:2px solid #8fb314;
+}
+
+/* ------------------------------------ Tabelle ------------------------------------- */
+
+table#table-home, table.table-aufeinenblick, table#table-projekte{
+width: 100%;
+margin:0 0 10px 0;
+font-size:1em;
+}
+table.table-aufeinenblick{
+border:1px solid #ccc;
+margin-top:10px;
+}
+table#table-home td{
+padding:7px 0;
+}
+table.table-aufeinenblick td, table#table-projekte td{
+padding:5px 5px 15px 5px;
+line-height:1.5em;
+}
+table#table-home td.linkespalte{
+width:140px;
+}
+table#table-projekte tr{
+border-bottom:1px solid #ccc;
+}
+table#table-projekte tr:last-child{
+border-bottom:0;
+}
+table.table-aufeinenblick th{
+background:#f1f1f1;
+padding:5px;
+border-bottom:1px solid #ccc;
+}
+table.table-aufeinenblick td{
+padding:5px;
+border:1px solid #ccc;
+}
+table.table-aufeinenblick td.linkespalte{
+width:60px;
+}
+table#table-projekte td.linkespalte{
+width:100px;
+}
+/* ------------------------------------ Sonstiges ------------------------------------- */
+ul#projekte-menu{
+border-bottom:1px solid #ccc;
+padding:0 0 20px 0;
+margin:0 0 20px 0;
+}
+ul#projekte-menu li{
+list-style-type:none;
+display:inline;
+border-right:1px solid #ccc;
+padding:0 0.5em;
+}
+ul#projekte-menu li.first{
+padding:0 0.5em 0 0;
+}
+ul#projekte-menu li.last{
+border-right:0;
+}
+
+.projekte-unterliste li{
+list-style-type:circle;
+list-style-image:none;
+margin:5px 30px;
+color:#777;
+}
+.projekte-kundennutzen{
+font-variant:small-caps;
+font-weight:bold;
+font-size:1.1em;
+list-style-image:none !important;
+color:#000;
+margin:5px 0 !important;
+}
+.projekte-verantwortung{
+margin-top:10px;
+font-variant:small-caps;
+font-weight:bold;
+font-size:1.1em;
+list-style-image:none !important;
+color:#000;
+margin:5px 0 !important;
+}
+
+#impressum li.abstand { margin:15px 0 0 0; }
+
+.vcard-download { float:right; }
